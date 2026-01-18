@@ -23,6 +23,7 @@ const Navbar = () => {
         { label: "Catering", path: "/services/catering" },
         { label: "Makeover", path: "/services/makeover" },
         { label: "Venue", path: "/services/venue" },
+        { label: "Photography & Videography", path: "/services/photography" },
         { label: "Pre-Wedding", path: "/services/pre-wedding" },
       ],
     },

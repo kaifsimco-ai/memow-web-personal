@@ -184,6 +184,9 @@ export default function EnquiryModal({ isOpen, onClose }: EnquiryModalProps) {
                   <option value="Decor">Decor</option>
                   <option value="Catering">Catering</option>
                   <option value="Makeover">Makeover</option>
+                  <option value="Photography & Videography">
+                    Photography & Videography
+                  </option>
                   <option value="Pre-Wedding">Pre-Wedding</option>
                   <option value="Venue">Venue</option>
                   <option value="Event Planning">Event Planning</option>

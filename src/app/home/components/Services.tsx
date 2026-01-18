@@ -269,13 +269,78 @@ const Services = () => {
           </div>
         </Link>
 
-        {/* Pre-Wedding Card - Full width bottom */}
-        {/* <Link
-          href="/services/pre-wedding"
-          className="md:col-span-3 bg-skin border-2 border-goldShade2 rounded-2xl p-4 overflow-hidden hover:shadow-xl transition-shadow duration-300"
-        >
-          <div className="flex flex-col md:flex-row h-full">
-            <div className="flex-1 md:pr-4">
+        {/* Photography & Pre-Wedding Row */}
+        <div className="md:col-span-3 flex flex-col md:flex-row gap-4">
+          {/* Photography Card */}
+          <Link
+            href="/services/photography"
+            className="flex-1 bg-skin border-2 border-goldShade2 rounded-2xl p-4 overflow-hidden hover:shadow-xl transition-shadow duration-300"
+          >
+            <div className="flex flex-col h-full">
+              <div className="mb-4">
+                <p className="text-2xl md:text-3xl font-medium leading-normal text-text-black mb-3">
+                  Photography & Videography
+                </p>
+                <p className="text-sm-16 font-normal leading-normal text-grayShade2 mb-3">
+                  Capture every precious moment of your special day with our
+                  professional photographers and stunning cinematic videography.
+                </p>
+                <ButtonIC
+                  label="View Gallery"
+                  className={
+                    "border-2 px-4 py-2 gap-2 border-border-80 bg-brown-80 flex flex-row items-center"
+                  }
+                  labelStyle={
+                    "text-sm-16 leading-normal font-normal text-white"
+                  }
+                  icon={
+                    <Image
+                      src="/images/icons/buttonIcons/arrow-right-icon.svg"
+                      className="h-6 w-6"
+                      height={26}
+                      width={26}
+                      alt={"arrow-icon"}
+                    />
+                  }
+                  iconPosition="end"
+                />
+              </div>
+              <div className="flex flex-row gap-3 mb-4">
+                <ChipIc
+                  label={"#Popular"}
+                  className="bg-skin border-1 border-brown-60 px-2 py-1"
+                  size="sm"
+                  labelClassName="text-brown-60"
+                />
+                <ChipIc
+                  label={"#Cinematic"}
+                  className="bg-skin border-1 border-brown-60 px-2 py-1"
+                  size="sm"
+                  labelClassName="text-brown-60"
+                />
+              </div>
+              <div className="flex-1 flex items-center justify-center min-h-[150px] md:min-h-[200px]">
+                <Image
+                  src={"/Photography and Videography.svg"}
+                  className="object-contain"
+                  height={180}
+                  width={180}
+                  style={{
+                    filter:
+                      "invert(26%) sepia(77%) saturate(500%) hue-rotate(1deg) brightness(85%) contrast(100%)",
+                  }}
+                  alt="photography-service"
+                />
+              </div>
+            </div>
+          </Link>
+
+          {/* Pre-Wedding Card */}
+          <Link
+            href="/services/pre-wedding"
+            className="flex-1 bg-skin border-2 border-goldShade2 rounded-2xl p-4 overflow-hidden hover:shadow-xl transition-shadow duration-300"
+          >
+            <div className="flex flex-col h-full">
               <div className="mb-4">
                 <p className="text-2xl md:text-3xl font-medium leading-normal text-text-black mb-3">
                   Pre-Wedding
@@ -304,7 +369,7 @@ const Services = () => {
                   iconPosition="end"
                 />
               </div>
-              <div className="flex flex-row gap-3">
+              <div className="flex flex-row gap-3 mb-4">
                 <ChipIc
                   label={"#New"}
                   className="bg-skin border-1 border-brown-60 px-2 py-1"
@@ -312,27 +377,28 @@ const Services = () => {
                   labelClassName="text-brown-60"
                 />
                 <ChipIc
-                  label={"#Photography"}
+                  label={"#Romantic"}
                   className="bg-skin border-1 border-brown-60 px-2 py-1"
                   size="sm"
                   labelClassName="text-brown-60"
                 />
               </div>
+              <div className="flex-1 flex items-center justify-center min-h-[150px] md:min-h-[200px]">
+                <Image
+                  src={"/Creative Direction.svg"}
+                  className="object-contain"
+                  height={180}
+                  width={180}
+                  style={{
+                    filter:
+                      "invert(26%) sepia(77%) saturate(500%) hue-rotate(1deg) brightness(85%) contrast(100%)",
+                  }}
+                  alt="pre-wedding-service"
+                />
+              </div>
             </div>
-            <div className="flex-shrink-0 flex items-center justify-center md:w-[400px] min-h-[180px] md:min-h-[200px]">
-              <Image
-                src={"/Photography and Videography.svg"}
-                className="w-full h-full object-contain"
-                height={200}
-                width={400}
-                style={{
-                  minHeight: "180px",
-                }}
-                alt="pre-wedding-service"
-              />
-            </div>
-          </div>
-        </Link> */}
+          </Link>
+        </div>
       </section>
     </section>
   );
