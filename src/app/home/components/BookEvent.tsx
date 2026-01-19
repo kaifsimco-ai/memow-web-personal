@@ -186,7 +186,7 @@ const BookEvent = () => {
                     <MdExpandMore size={20} className="text-gray-400" />
                   </button>
                 </PopoverTrigger>
-                <PopoverContent className="w-80 p-4 bg-gray-50 rounded-lg">
+                <PopoverContent className="w-80 p-4 bg-gray-50 rounded-lg z-50 shadow-lg">
                   <Calendar
                     currentMonth={currentMonth}
                     selectedDate={selectedDate}
